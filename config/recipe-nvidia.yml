@@ -1,0 +1,8 @@
+name: linux-nvidia
+description: My Linux desktop configuration - plus NVIDIA
+base-image: ghcr.io/ublue-os/silverblue-nvidia
+image-version: latest
+modules:
+  - from-file: rpm.yml
+  - from-file: flatpak.yml
+  - type: signing

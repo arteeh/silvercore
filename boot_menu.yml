@@ -3,3 +3,7 @@ ublue_variants:
     ks: /kickstart/ublue-os.ks
     flavors:
       - label: arteeh/linux
+  - label: arteeh/linux-nvidia
+    ks: /kickstart/ublue-os.ks
+    flavors:
+      - label: arteeh/linux-nvidia
