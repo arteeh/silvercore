@@ -7,3 +7,7 @@ ublue_variants:
     ks: /kickstart/ublue-os.ks
     flavors:
       - label: arteeh/silvercore-nvidia
+  - label: arteeh/silvercore-server
+    ks: /kickstart/ublue-os.ks
+    flavors:
+      - label: arteeh/silvercore-server
