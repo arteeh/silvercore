@@ -1,9 +1,9 @@
 ublue_variants:
-  - label: arteeh/linux
+  - label: arteeh/silvercore
     ks: /kickstart/ublue-os.ks
     flavors:
-      - label: arteeh/linux
-  - label: arteeh/linux-nvidia
+      - label: arteeh/silvercore
+  - label: arteeh/silvercore-nvidia
     ks: /kickstart/ublue-os.ks
     flavors:
-      - label: arteeh/linux-nvidia
+      - label: arteeh/silvercore-nvidia
