@@ -3,11 +3,11 @@ on:
   schedule:
     - cron: "00 00 * * 0"
   push:
-    paths-ignore:
+    paths-ignore: # don't rebuild if only documentation has changed
       - "**.md"
       
   pull_request:
-  workflow_dispatch:
+  workflow_dispatch: # allow manually triggering builds
 jobs:
   bluebuild:
     name: Build Custom Image
@@ -17,13 +17,15 @@ jobs:
       packages: write
       id-token: write
     strategy:
-      fail-fast: false 
+      fail-fast: false # stop GH from cancelling all matrix builds if one fails
       matrix:
         recipe:
+          # !! Add your recipes here 
           - recipe.yml
           - recipe-server.yml
           - recipe-nvidia.yml
     steps:
+       # the build is fully handled by the reusable github action
       - name: Build Custom Image
         uses: blue-build/github-action@v1.5
         with:
