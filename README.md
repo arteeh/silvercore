@@ -7,9 +7,17 @@ This is essentially Fedora Silverblue, but with the following differences:
 - A selection of my usual (Flatpak) apps are added
 - Docker and Tailscale are included
 
-There's an NVIDIA version which includes its drivers, and there's a server version that excludes the desktop and apps. Server version is only for amd64, sadly.
+There's an NVIDIA version which includes its drivers, and there's a server version that excludes the desktop and apps.
 
-### To rebase an existing atomic Fedora installation to the latest build:
+## ISO's
+
+### [Silvercore](https://drive.proton.me/urls/MGQRATAC8R#rGMBgzz8W6lT) ([Checksum](https://drive.proton.me/urls/HWGZ04CRVG#OFKD1p3xAEq5))
+
+### [Silvercore NVIDIA](https://drive.proton.me/urls/TS9234Q6BW#9xxkZaa2nK4l) ([Checksum](https://drive.proton.me/urls/86XBMXHCB4#esn8h93u4LnZ))
+
+### [Silvercore Server](https://drive.proton.me/urls/MANX4QQH14#4SjJodf5g5Ce) ([Checksum](https://drive.proton.me/urls/Z89RKBF7GG#EoD3XUXOO1Xk))
+
+## Rebasing from another atomic Fedora system
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
