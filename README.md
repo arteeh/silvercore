@@ -4,7 +4,7 @@ This is essentially Fedora Silverblue, but with the following differences:
 
 - Baked in extensions are removed. You can install extensions using the Extension Manager app
 - Baked in apps are mostly removed. All apps are Flatpaks with the exception of the terminal, file manager and the Disks app
-- A selection of my usual (Flatpak) apps are added
+- A selection of my usual (Flatpak) apps are added _(this is currently broken)_
 - Docker and Tailscale are included
 
 There's an NVIDIA version which includes its drivers, and there's a server version that excludes the desktop and apps.
