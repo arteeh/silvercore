@@ -5,22 +5,27 @@ user:
   repo-name: flathub
   repo-title: "Flathub"
   install:
-    - com.google.Chrome
+    - ca.desrt.dconf-editor
     - com.bitwarden.desktop
-    - org.gnome.Calculator
-    - org.gnome.TextEditor
-    - org.gnome.Loupe
-    - io.github.celluloid_player.Celluloid
-    - com.github.tchx84.Flatseal
-    - io.missioncenter.MissionCenter
-    - com.mattjakeman.ExtensionManager
-    - com.visualstudio.code
-    - io.github.shiftey.Desktop
-    - org.gimp.GIMP
-    - org.signal.Signal
-    - io.github.mimbrero.WhatsAppDesktop
     - com.discordapp.Discord
-    - com.moonlight_stream.Moonlight
     - com.github.iwalton3.jellyfin-media-player
+    - com.github.tchx84.Flatseal
+    - com.github.unrud.VideoDownloader
+    - com.google.Chrome
+    - com.heroicgameslauncher.hgl
+    - com.mattjakeman.ExtensionManager
+    - com.moonlight_stream.Moonlight
+    - com.obsproject.Studio
     - com.valvesoftware.Steam
+    - com.visualstudio.code
+    - io.github.celluloid_player.Celluloid
+    - io.github.mimbrero.WhatsAppDesktop
+    - io.github.shiftey.Desktop
+    - io.missioncenter.MissionCenter
+    - org.gimp.GIMP
+    - org.gnome.Calculator
+    - org.gnome.Loupe
+    - org.gnome.TextEditor
+    - org.gnome.Totem
     - org.prismlauncher.PrismLauncher
+    - org.signal.Signal
