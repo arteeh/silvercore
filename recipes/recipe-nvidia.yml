@@ -1,4 +1,4 @@
-name: silvercore-nvidia
+name: silvercore-bluebuild-nvidia
 description: My Linux desktop configuration - plus NVIDIA
 base-image: ghcr.io/ublue-os/silverblue-nvidia
 image-version: latest
