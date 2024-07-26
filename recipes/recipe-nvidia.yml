@@ -1,10 +1,9 @@
-name: silvercore
-description: My Linux desktop configuration
-base-image: ghcr.io/ublue-os/silverblue-main
+name: silvercore-nvidia
+description: My Linux desktop configuration - plus NVIDIA
+base-image: ghcr.io/ublue-os/silverblue-nvidia
 image-version: latest
 modules:
   - from-file: rpm.yml
   - from-file: flatpak.yml
   - from-file: extensions.yml
   - type: signing
-

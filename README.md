@@ -1,43 +1,39 @@
-# silvercore-bluebuild &nbsp; [![build-ublue](https://github.com/arteeh/silvercore-bluebuild/actions/workflows/build.yml/badge.svg)](https://github.com/arteeh/silvercore-bluebuild/actions/workflows/build.yml)
+## My desktop Linux OS, based on [BlueBuild](https://github.com/blue-build/template)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+This is essentially Fedora Silverblue, but with the following differences:
 
-After setup, it is recommended you update this README to describe your custom image.
+- Baked in extensions are mostly removed. You can install extensions using the Extension Manager app
+- Baked in apps are mostly removed. All apps are Flatpaks with the exception of the terminal, file manager and the Disks app
+- A selection of my usual (Flatpak) apps are added _(this is currently broken)_
+- Docker and Tailscale are included
 
-## Installation
+There's an NVIDIA version which includes its drivers, and there's a server version that excludes the desktop and apps.
 
-> **Warning**  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+## Rebasing from another atomic Fedora system
 
-To rebase an existing atomic Fedora installation to the latest build:
+If you're bringing up a new system, [install Silverblue](https://fedoraproject.org/atomic-desktops/silverblue/download) first and then follow the instructions below to move to Silvercore.
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/arteeh/silvercore-bluebuild:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/arteeh/silvercore-bluebuild
   ```
-- Reboot to complete the rebase:
+- Reboot:
   ```
   systemctl reboot
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/arteeh/silvercore-bluebuild:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/arteeh/silvercore-bluebuild
   ```
-- Reboot again to complete the installation
+- Reboot again
   ```
   systemctl reboot
   ```
-
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
-
-## ISO
-
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
-
-## Verification
-
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
-
-```bash
-cosign verify --key cosign.pub ghcr.io/arteeh/silvercore-bluebuild
-```
+- (NVIDIA only) Set up NVIDIA drivers
+  ```
+  ujust configure-nvidia
+  ```
+- Reboot again
+  ```
+  systemctl reboot
+  ```

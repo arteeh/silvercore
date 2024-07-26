@@ -1,0 +1,7 @@
+name: silvercore-server
+description: My Linux server configuration
+base-image: ghcr.io/ublue-os/base-main
+image-version: latest
+modules:
+  - from-file: rpm-server.yml
+  - type: signing
