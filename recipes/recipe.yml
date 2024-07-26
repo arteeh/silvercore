@@ -7,4 +7,3 @@ modules:
   - from-file: flatpak.yml
   - from-file: extensions.yml
   - type: signing
-
