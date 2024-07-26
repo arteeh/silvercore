@@ -1,7 +1,7 @@
 docker run \
 	--rm \
 	--privileged \
-	--volume /home/arteeh/isogen/main:/build-container-installer/build  \
+	--volume ~silvercore-iso/main:/build-container-installer/build  \
 	ghcr.io/jasonn3/build-container-installer:latest \
 	VERSION=40 \
 	IMAGE_REPO=ghcr.io/arteeh \
@@ -14,7 +14,7 @@ docker run \
 docker run \
 	--rm \
 	--privileged \
-	--volume /home/arteeh/isogen/nvidia:/build-container-installer/build  \
+	--volume ~silvercore-iso/nvidia:/build-container-installer/build  \
 	ghcr.io/jasonn3/build-container-installer:latest \
 	VERSION=40 \
 	IMAGE_REPO=ghcr.io/arteeh \
@@ -27,7 +27,7 @@ docker run \
 docker run \
 	--rm \
 	--privileged \
-	--volume /home/arteeh/isogen/server:/build-container-installer/build  \
+	--volume ~silvercore-iso/server:/build-container-installer/build  \
 	ghcr.io/jasonn3/build-container-installer:latest \
 	VERSION=40 \
 	IMAGE_REPO=ghcr.io/arteeh \
