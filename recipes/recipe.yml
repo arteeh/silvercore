@@ -1,4 +1,4 @@
-name: silvercore-bluebuild
+name: silvercore
 description: My Linux desktop configuration
 base-image: ghcr.io/ublue-os/silverblue-main
 image-version: latest

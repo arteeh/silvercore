@@ -1,4 +1,4 @@
-name: silvercore-bluebuild-server
+name: silvercore-server
 description: My Linux server configuration
 base-image: ghcr.io/ublue-os/base-main
 image-version: latest

@@ -9,13 +9,22 @@ This is essentially Fedora Silverblue, but with the following differences:
 
 There's an NVIDIA version which includes its drivers, and there's a server version that excludes the desktop and apps.
 
-## Rebasing from another atomic Fedora system
+## Download
 
-If you're bringing up a new system, [install Silverblue](https://fedoraproject.org/atomic-desktops/silverblue/download) first and then follow the instructions below to move to Silvercore.
+[Silvercore.iso](https://drive.proton.me/urls/MGQRATAC8R#rGMBgzz8W6lT)
+[Checksum](https://drive.proton.me/urls/HWGZ04CRVG#OFKD1p3xAEq5)
+
+[Silvercore-NVIDIA.iso](https://drive.proton.me/urls/TS9234Q6BW#9xxkZaa2nK4l)
+[Checksum](https://drive.proton.me/urls/86XBMXHCB4#esn8h93u4LnZ)
+
+[Silvercore-Server.iso](https://drive.proton.me/urls/MANX4QQH14#4SjJodf5g5Ce)
+[Checksum](https://drive.proton.me/urls/Z89RKBF7GG#EoD3XUXOO1Xk)
+
+## Rebasing from another atomic Fedora system
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/arteeh/silvercore-bluebuild
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/arteeh/silvercore
   ```
 - Reboot:
   ```
@@ -23,7 +32,7 @@ If you're bringing up a new system, [install Silverblue](https://fedoraproject.o
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/arteeh/silvercore-bluebuild
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/arteeh/silvercore
   ```
 - Reboot again
   ```
