@@ -11,14 +11,11 @@ There's an NVIDIA version which includes its drivers, and there's a server versi
 
 ## Download
 
-[Silvercore.iso](https://drive.proton.me/urls/MGQRATAC8R#rGMBgzz8W6lT)
-[Checksum](https://drive.proton.me/urls/HWGZ04CRVG#OFKD1p3xAEq5)
+[Silvercore.iso](https://drive.proton.me/urls/MGQRATAC8R#rGMBgzz8W6lT) ([checksum](https://drive.proton.me/urls/HWGZ04CRVG#OFKD1p3xAEq5))
 
-[Silvercore-NVIDIA.iso](https://drive.proton.me/urls/TS9234Q6BW#9xxkZaa2nK4l)
-[Checksum](https://drive.proton.me/urls/86XBMXHCB4#esn8h93u4LnZ)
+[Silvercore-NVIDIA.iso](https://drive.proton.me/urls/TS9234Q6BW#9xxkZaa2nK4l) ([checksum](https://drive.proton.me/urls/86XBMXHCB4#esn8h93u4LnZ))
 
-[Silvercore-Server.iso](https://drive.proton.me/urls/MANX4QQH14#4SjJodf5g5Ce)
-[Checksum](https://drive.proton.me/urls/Z89RKBF7GG#EoD3XUXOO1Xk)
+[Silvercore-Server.iso](https://drive.proton.me/urls/MANX4QQH14#4SjJodf5g5Ce) ([checksum](https://drive.proton.me/urls/Z89RKBF7GG#EoD3XUXOO1Xk))
 
 ## Rebasing from another atomic Fedora system
 
