@@ -9,7 +9,7 @@ docker run \
 	IMAGE_NAME=silvercore \
 	IMAGE_TAG=40 \
 	VARIANT=Silverblue \
-	ISO_NAME=Silvercore.iso \
+	ISO_NAME=build/Silvercore.iso \
 	WEB_UI=true & \
 docker run \
     --name geniso-nvidia \
@@ -22,7 +22,7 @@ docker run \
 	IMAGE_NAME=silvercore-nvidia \
 	IMAGE_TAG=40 \
 	VARIANT=Silverblue \
-	ISO_NAME=Silvercore-NVIDIA.iso \
+	ISO_NAME=build/Silvercore-NVIDIA.iso \
 	WEB_UI=true & \
 docker run \
     --name geniso-server \
@@ -35,5 +35,5 @@ docker run \
 	IMAGE_NAME=silvercore-server \
 	IMAGE_TAG=40 \
 	VARIANT=Server \
-	ISO_NAME=Silvercore-Server.iso \
+	ISO_NAME=build/Silvercore-Server.iso \
 	WEB_UI=true
