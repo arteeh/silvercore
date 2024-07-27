@@ -26,6 +26,5 @@ user:
     - org.gnome.Calculator
     - org.gnome.Loupe
     - org.gnome.TextEditor
-    - org.gnome.Totem
     - org.prismlauncher.PrismLauncher
     - org.signal.Signal
