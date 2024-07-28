@@ -5,5 +5,9 @@ image-version: latest
 modules:
   - from-file: rpm.yml
   - from-file: extensions.yml
-  - type: signing
+  - type: files
+      files:
+        - source: system
+          destination: /
   - type: yafti
+  - type: signing
