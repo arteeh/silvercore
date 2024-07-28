@@ -16,6 +16,7 @@ user:
     - com.mattjakeman.ExtensionManager
     - com.moonlight_stream.Moonlight
     - com.obsproject.Studio
+    - com.raggesilver.BlackBox
     - com.valvesoftware.Steam
     - com.visualstudio.code
     - io.github.celluloid_player.Celluloid

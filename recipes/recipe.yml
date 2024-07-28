@@ -4,6 +4,6 @@ base-image: ghcr.io/ublue-os/silverblue-main
 image-version: latest
 modules:
   - from-file: rpm.yml
-  - from-file: flatpak.yml
   - from-file: extensions.yml
   - type: signing
+  - type: yafti
