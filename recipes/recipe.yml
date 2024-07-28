@@ -6,8 +6,8 @@ modules:
   - from-file: rpm.yml
   - from-file: extensions.yml
   - type: files
-      files:
-        - source: system
-          destination: /
+    files:
+      - source: system
+        destination: /
   - type: yafti
   - type: signing
