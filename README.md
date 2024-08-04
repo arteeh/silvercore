@@ -20,26 +20,18 @@ There's an NVIDIA version which includes its drivers, and there's a server versi
 ## Rebasing from another atomic Fedora system
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/arteeh/silvercore
-  ```
+  `rpm-ostree rebase ostree-unverified-registry:ghcr.io/arteeh/silvercore`
 - Reboot:
-  ```
-  systemctl reboot
-  ```
+  `systemctl reboot`
 - Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/arteeh/silvercore
-  ```
+  `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/arteeh/silvercore`
 - Reboot again
-  ```
-  systemctl reboot
-  ```
+  `systemctl reboot`
 - (NVIDIA only) Set up NVIDIA drivers
-  ```
-  ujust configure-nvidia
-  ```
+  `ujust configure-nvidia`
 - Reboot again
-  ```
-  systemctl reboot
-  ```
+  `systemctl reboot`
+
+## Start Yafti (if it doesn't do so on its own)
+
+`yafti /usr/share/ublue-os/firstboot/yafti.yml`

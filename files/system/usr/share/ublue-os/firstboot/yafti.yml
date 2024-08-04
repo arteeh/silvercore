@@ -57,7 +57,7 @@ screens:
             - Extension Manager: com.mattjakeman.ExtensionManager
             - Moonlight: com.moonlight_stream.Moonlight
             - OBS Studio: com.obsproject.Studio
-            - Black Box: com.raggesilver.BlackBox
+            - Ptyxis: app.devsuite.Ptyxis
             - Steam: com.valvesoftware.Steam
             - Visual Studio Code: com.visualstudio.code
             - Celluloid: io.github.celluloid_player.Celluloid
