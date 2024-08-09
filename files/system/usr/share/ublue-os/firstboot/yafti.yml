@@ -61,7 +61,6 @@ screens:
             - Steam: com.valvesoftware.Steam
             - Visual Studio Code: com.visualstudio.code
             - Celluloid: io.github.celluloid_player.Celluloid
-            - WhatsApp Desktop: io.github.mimbrero.WhatsAppDesktop
             - GitHub Desktop: io.github.shiftey.Desktop
             - Mission Center: io.missioncenter.MissionCenter
             - GNU Image Manipulation Program: org.gimp.GIMP
