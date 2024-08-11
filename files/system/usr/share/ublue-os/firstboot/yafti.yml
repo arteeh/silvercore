@@ -69,6 +69,7 @@ screens:
             - Text Editor: org.gnome.TextEditor
             - Prism Launcher: org.prismlauncher.PrismLauncher
             - Signal Desktop: org.signal.Signal
+            - Solaar: io.github.pwr_solaar.solaar
         Core GNOME Apps:
           description: Core system applications for the GNOME desktop environment.
           default: false
