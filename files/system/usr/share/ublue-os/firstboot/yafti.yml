@@ -48,7 +48,7 @@ screens:
           packages:
             - Dconf Editor: ca.desrt.dconf-editor
             - Bitwarden: com.bitwarden.desktop
-            - Discord: com.discordapp.Discord
+            - Vesktop: dev.vencord.Vesktop
             - Jellyfin Media Player: com.github.iwalton3.jellyfin-media-player
             - Flatseal: com.github.tchx84.Flatseal
             - Video Downloader: com.github.unrud.VideoDownloader
