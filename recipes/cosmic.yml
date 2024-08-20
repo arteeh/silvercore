@@ -1,0 +1,12 @@
+name: silvercore-cosmic
+description: My Linux desktop configuration - with COSMIC instead of GNOME
+base-image: ghcr.io/ublue-os/cosmic
+image-version: latest
+modules:
+  - from-file: rpm-cosmic.yml
+  - type: files
+    files:
+      - source: system
+        destination: /
+  - type: yafti
+  - type: signing
