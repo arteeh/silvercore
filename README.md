@@ -17,21 +17,40 @@ There's an NVIDIA version which includes its drivers, and there's a server versi
 
 [Silvercore-Server.iso](https://drive.proton.me/urls/MANX4QQH14#4SjJodf5g5Ce) ([checksum](https://drive.proton.me/urls/Z89RKBF7GG#EoD3XUXOO1Xk))
 
+The official ISO has a bug where it doesn't set the proper ostree remote. When install has finished, install a terminal app like [Ptyxis](https://flathub.org/apps/app.devsuite.Ptyxis) and set it manually:
+```
+rpm-ostree rebase ostree-image-signed:docker://ghcr.io/arteeh/silvercore
+systemctl reboot
+```
+
+It's also possible that Yafti doesn't automatically start. Run it like this:
+```
+yafti /usr/share/ublue-os/firstboot/yafti.yml
+```
+
 ## Rebasing from another atomic Fedora system
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  `rpm-ostree rebase ostree-unverified-registry:ghcr.io/arteeh/silvercore`
-- Reboot:
-  `systemctl reboot`
-- Then rebase to the signed image, like so:
-  `rpm-ostree rebase ostree-image-signed:docker://ghcr.io/arteeh/silvercore`
-- Reboot again
-  `systemctl reboot`
-- (NVIDIA only) Set up NVIDIA drivers
-  `ujust configure-nvidia`
-- Reboot again
-  `systemctl reboot`
-
-## Start Yafti (if it doesn't do so on its own)
-
-`yafti /usr/share/ublue-os/firstboot/yafti.yml`
+First rebase to the unsigned image, to get the proper signing keys and policies installed:
+```
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/arteeh/silvercore
+```
+Reboot:
+```
+systemctl reboot
+```
+Then rebase to the signed image, like so:
+```
+rpm-ostree rebase ostree-image-signed:docker://ghcr.io/arteeh/silvercore
+```
+Reboot again
+```
+systemctl reboot
+```
+(NVIDIA only) Set up NVIDIA drivers
+```
+ujust configure-nvidia
+```
+Reboot again
+```
+systemctl reboot
+```
