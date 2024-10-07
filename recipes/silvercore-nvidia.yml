@@ -9,4 +9,6 @@ modules:
       - source: system
         destination: /
   - type: yafti
+  - type: justfiles
+    validate: true
   - type: signing
