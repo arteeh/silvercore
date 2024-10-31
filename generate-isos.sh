@@ -4,7 +4,7 @@ docker run \
 	--privileged \
 	--volume ./iso/main:/build-container-installer/build  \
 	ghcr.io/jasonn3/build-container-installer:latest \
-	VERSION=40 \
+	VERSION=41 \
 	IMAGE_REPO=ghcr.io/arteeh \
 	IMAGE_NAME=silvercore \
 	IMAGE_TAG=latest \
@@ -19,7 +19,7 @@ docker run \
 	--privileged \
 	--volume ./iso/nvidia:/build-container-installer/build  \
 	ghcr.io/jasonn3/build-container-installer:latest \
-	VERSION=40 \
+	VERSION=41 \
 	IMAGE_REPO=ghcr.io/arteeh \
 	IMAGE_NAME=silvercore-nvidia \
 	IMAGE_TAG=latest \
@@ -34,7 +34,7 @@ docker run \
 	--privileged \
 	--volume ./iso/server:/build-container-installer/build  \
 	ghcr.io/jasonn3/build-container-installer:latest \
-	VERSION=40 \
+	VERSION=41 \
 	IMAGE_REPO=ghcr.io/arteeh \
 	IMAGE_NAME=silvercore-server \
 	IMAGE_TAG=latest \
@@ -49,7 +49,7 @@ docker run \
 	--privileged \
 	--volume ./iso/server:/build-container-installer/build  \
 	ghcr.io/jasonn3/build-container-installer:latest \
-	VERSION=40 \
+	VERSION=41 \
 	IMAGE_REPO=ghcr.io/arteeh \
 	IMAGE_NAME=silvercore-cosmic \
 	IMAGE_TAG=latest \
