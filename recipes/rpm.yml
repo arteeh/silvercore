@@ -13,8 +13,6 @@
     - sunshine
   remove:
     - gnome-system-monitor
-    - gnome-terminal
-    - gnome-terminal-nautilus
     - gnome-tweaks
     - gnome-tour
     - gnome-classic-session
