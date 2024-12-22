@@ -1,11 +1,5 @@
   type: rpm-ostree
   repos:
     - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-    - https://download.docker.com/linux/fedora/docker-ce.repo
   install:
     - tailscale
-    - docker-ce
-    - docker-ce-cli
-    - containerd.io
-    - docker-buildx-plugin
-    - docker-compose-plugin
