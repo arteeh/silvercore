@@ -2,7 +2,6 @@
   repos:
     - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
     - https://download.docker.com/linux/fedora/docker-ce.repo
-    - https://copr.fedorainfracloud.org/coprs/matte-schwartz/sunshine/repo/fedora-41/matte-schwartz-sunshine-fedora-41.repo
   install:
     - tailscale
     - docker-ce
@@ -10,7 +9,6 @@
     - containerd.io
     - docker-buildx-plugin
     - docker-compose-plugin
-    - sunshine
   remove:
     - gnome-system-monitor
     - gnome-tweaks
@@ -25,5 +23,3 @@
     - yelp
     - firefox
     - firefox-langpacks
-    - nvtop
-    - htop

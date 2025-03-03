@@ -4,9 +4,4 @@ base-image: ghcr.io/ublue-os/cosmic
 image-version: 41
 modules:
   - from-file: rpm-cosmic.yml
-  - type: files
-    files:
-      - source: system
-        destination: /
-  - type: yafti
   - type: signing

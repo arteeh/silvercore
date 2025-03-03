@@ -4,10 +4,4 @@ base-image: ghcr.io/ublue-os/silverblue-nvidia
 image-version: latest
 modules:
   - from-file: rpm.yml
-  - type: files
-    files:
-      - source: system
-        destination: /
-  - type: yafti
-  - type: justfiles
   - type: signing
